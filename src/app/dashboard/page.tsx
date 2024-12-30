@@ -2,6 +2,7 @@ import React from "react";
 import Dashboard from "@/modules";
 import { UserResponse } from "@/utils/types/user";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const dashboard = async ({searchParams}: {searchParams: any}) => {
     
     const sp = await searchParams;
