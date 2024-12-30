@@ -18,6 +18,7 @@ import { flexRender } from "@tanstack/react-table";
 
 interface GenericTableProps<T extends BaseRecord> {
   data: T[];
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   columns: ColumnDef<T, any>[];
   config: TableConfiguration<T>;
 }

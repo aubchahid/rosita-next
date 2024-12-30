@@ -6,7 +6,7 @@ import {
   ChevronLeftIcon,
   ChevronRightIcon,
 } from "@heroicons/react/20/solid";
-import { useRouter, useSearchParams } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 const options = [
   { value: 5, label: "5" },
@@ -112,6 +112,7 @@ function PaginationNumbers<TData>({
   return pages;
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export default function TablePagination<TData extends Record<string, any>>({
   table,
 }: {

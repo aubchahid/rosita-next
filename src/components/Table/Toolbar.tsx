@@ -47,6 +47,7 @@ const currentUrl = new URL(window.location.href);
             options={statusOptions}
             value={table.getColumn("status")?.getFilterValue() ?? []}
             onChange={(e) => table.getColumn("status")?.setFilterValue(e)}
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
             getOptionValue={(option: { value: any }) => option.value}
             getOptionDisplayValue={(option: { value: string }) =>
               renderOptionDisplayValue(option.value)
